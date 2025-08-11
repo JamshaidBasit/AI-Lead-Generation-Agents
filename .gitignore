@@ -1,0 +1,13 @@
+# Virtual environment folder
+venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Other common ignores
+*.pyo
+*.pyd
+.Python
+env/
+ENV/
