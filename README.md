@@ -105,3 +105,36 @@ GROQ_API_KEY="gsk_your_groq_api_key"
 - `create_google_meeting` creates a new calendar event and generates a Google Meet link.
 - `send_meeting_confirmation` sends a confirmation email with meeting details.
 - `trigger_meeting.py` collects meeting details (time, duration) from the user and calls functions from `calendar_utils.py` to schedule a Google Meet.
+
+
+## Usage
+
+Each script can be run according to its purpose.
+
+To run the Apollo Scraper:
+
+```bash
+python ApolloScraper.py
+```
+
+To send LinkedIn connection requests:
+```bash
+python Connect_and_message.py
+```
+
+To extract emails from LinkedIn:
+```bash
+python demo.py
+```
+To send cold emails:
+```bash
+python Email_Generation_and_sending.py
+```
+
+To schedule a Google Meet and send confirmation emails:
+```bash
+python trigger_meeting.py
+```
+
+
+
