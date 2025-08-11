@@ -61,3 +61,13 @@ Example file content:
   "start_url": "Empty",
   "export_file_name": "apollo_leads.csv"
 }
+```
+
+### `.env` (Environment Variables)
+
+You haven’t provided a `.env` file, but for security reasons, it’s better to store sensitive information like the Groq API key and other keys in it. 
+
+Create a `.env` file and store your Groq API key like this:
+
+```env
+GROQ_API_KEY="gsk_your_groq_api_key"
