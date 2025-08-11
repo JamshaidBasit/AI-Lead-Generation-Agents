@@ -88,9 +88,20 @@ GROQ_API_KEY="gsk_your_groq_api_key"
 - If `include_note` is set to yes, it sends a connection request with a custom message.
 - If the Connect button is not found, it tries to follow the profile instead.
 
-### Emain_Extractor_Linkedin.py and demo.py
+### Email_Extractor_Linkedin.py and demo.py
 - `Emain_Extractor_Linkedin.py` contains a LinkedIn class used to extract emails from LinkedIn profiles.
 - The `selenium_login` method logs into LinkedIn.
 - The `singleScan_selenium` method extracts `.com` emails from the profile’s contact info page and returns them along with the name.
 - `demo.py` is a simple demonstration of the `Emain_Extractor_Linkedin.py` class.
 
+### Email_Generation_and_sending.py
+- This script generates and sends cold emails.
+- It uses the Groq API to create a professional email body.
+- Sends emails via the Gmail API.
+- Contains hard-coded sender and recipient emails (`jamshaidbasit0011@gmail.com` and `fatimanur146@gmail.com`).
+
+### calendar_utils.py and trigger_meeting.py
+- `calendar_utils.py` provides functions to interact with the Google Calendar API.
+- `create_google_meeting` creates a new calendar event and generates a Google Meet link.
+- `send_meeting_confirmation` sends a confirmation email with meeting details.
+- `trigger_meeting.py` collects meeting details (time, duration) from the user and calls functions from `calendar_utils.py` to schedule a Google Meet.
