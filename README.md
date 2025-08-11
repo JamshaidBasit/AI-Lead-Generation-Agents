@@ -45,3 +45,19 @@ profile_url = https://www.linkedin.com/in/target-profile/
 [Settings]
 include_note = yes
 message = Hi, I'd like to connect with you on LinkedIn!
+
+
+```
+### 2. `config.json`
+
+This file is for the Apollo.io scraper. Here, you can configure the name of the CSV file where leads will be exported.
+
+Example file content:
+
+```json
+{
+  "email": "your_apollo_login_email",
+  "password": "your_apollo_login_password",
+  "start_url": "Empty",
+  "export_file_name": "apollo_leads.csv"
+}
