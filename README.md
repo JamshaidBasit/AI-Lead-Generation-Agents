@@ -10,3 +10,10 @@ To run this project, you will need the following:
 - Google Chrome browser and the compatible ChromeDriver
 - Groq API Key: Required for the `Email_Generation_and_sending.py` script.
 - Google API Credentials: Needed to access Gmail and Google Calendar services. You will need a `credentials.json` file, which can be downloaded from the Google Cloud Console.
+
+## Installation
+
+First, you need to install the required Python libraries. You can use the `requirements.txt` file:
+
+```bash
+pip install -r requirements.txt
