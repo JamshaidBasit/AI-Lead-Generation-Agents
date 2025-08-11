@@ -17,3 +17,29 @@ First, you need to install the required Python libraries. You can use the `requi
 
 ```bash
 pip install -r requirements.txt
+
+## Configuration
+
+To run the project properly, some configuration files are required.
+
+### 1. `setup.ini`
+
+This file is for LinkedIn login credentials and connection request settings.
+
+- In the `[LinkedIn]` section, enter your LinkedIn username and password.
+- In the `[Target]` section, enter the LinkedIn profile URL you want to target.
+- In the `[Settings]` section, set `include_note` to `yes` or `no`, and write the message to send with the connection request.
+
+Example file content:
+
+```ini
+[LinkedIn]
+username = your_linkedin_username
+password = your_linkedin_password
+
+[Target]
+profile_url = https://www.linkedin.com/in/target-profile/
+
+[Settings]
+include_note = yes
+message = Hi, I'd like to connect with you on LinkedIn!
