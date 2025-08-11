@@ -1,6 +1,6 @@
 {
-  "email": "jamshaidbasit0302@gmail.com",
-  "password": "ApnaLagao0011",
-  "start_url": "https://app.apollo.io/#/people?page=1&sortAscending=false&sortByField=recommendations_score&personTitles[]=project%20manager",
+  "email": "Login Email",
+  "password": "Login Password",
+  "start_url": "No need",
   "export_file_name": "leads.csv"
 }
