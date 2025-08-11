@@ -7,12 +7,12 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 
 # --------- Configurations ---------
-GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
-GROQ_API_KEY = "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"  # Replace with your Groq API key
+GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completion"
+GROQ_API_KEY = ""  # Replace with your Groq API key
 
 SCOPES = ['https://www.googleapis.com/auth/gmail.send']
-FROM_EMAIL = "jamshaidbasit0011@gmail.com"
-TO_EMAIL = "fatimanur146@gmail.com"
+FROM_EMAIL = ""
+TO_EMAIL = ""
 
 # ----------------------------------
 
