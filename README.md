@@ -18,6 +18,8 @@ First, you need to install the required Python libraries. You can use the `requi
 ```bash
 pip install -r requirements.txt
 
+```
+
 ## Configuration
 
 To run the project properly, some configuration files are required.
