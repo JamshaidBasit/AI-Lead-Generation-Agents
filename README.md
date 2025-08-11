@@ -63,7 +63,7 @@ Example file content:
 }
 ```
 
-### `.env` (Environment Variables)
+### 3. `.env` (Environment Variables)
 
 You haven’t provided a `.env` file, but for security reasons, it’s better to store sensitive information like the Groq API key and other keys in it. 
 
@@ -71,3 +71,26 @@ Create a `.env` file and store your Groq API key like this:
 
 ```env
 GROQ_API_KEY="gsk_your_groq_api_key"
+```
+
+## Scripts Description
+
+### ApolloScraper.py
+- This script scrapes leads from Apollo.io.
+- It asks the user for filters like Job Title and Location to create a dynamic search URL.
+- Supports manual login and CAPTCHA solving.
+- Saves the scraped data (`first_name`, `last_name`, `job_title`, `company_name`, `location`, `email_address1`, `email_address2`, `linkedin_url`) into the CSV file named in `config.json`.
+
+### Connect_and_message.py
+- This script automatically sends connection requests on LinkedIn.
+- Reads credentials and target URL from `setup.ini`.
+- Navigates to the target profile and looks for the Connect button.
+- If `include_note` is set to yes, it sends a connection request with a custom message.
+- If the Connect button is not found, it tries to follow the profile instead.
+
+### Emain_Extractor_Linkedin.py and demo.py
+- `Emain_Extractor_Linkedin.py` contains a LinkedIn class used to extract emails from LinkedIn profiles.
+- The `selenium_login` method logs into LinkedIn.
+- The `singleScan_selenium` method extracts `.com` emails from the profile’s contact info page and returns them along with the name.
+- `demo.py` is a simple demonstration of the `Emain_Extractor_Linkedin.py` class.
+
